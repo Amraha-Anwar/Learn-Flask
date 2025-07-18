@@ -21,4 +21,4 @@ def submit():
     if request.method == "POST":
         return "You sent data!"
     else:
-        return "You are only viewing the form!"
+        return "You are receiving the data!"
