@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome Home{% endblock %}
+
+{% block content %}
+<style>
+    h1 {text-align: center; font-weight: bolder; padding: 20px; color: rgb(184, 89, 105);}
+    p {text-align: center; font-size: large; font-weight: 500; color: rgb(184, 89, 105);}
+    .home-btn { display: block; margin: 20px auto; padding: 10px 20px; background-color: rgb(211, 118, 134); color: black; border: 2px solid black; border-radius: 10px; text-align: center; text-decoration: none; font-weight: bold;}
+    .home-btn:hover {background-color: pink; }
+</style>
+
+<h1>Hi {{ username }}! 🎀</h1>
+<p>Welcome to A<sub>A_.</sub>Cafe! We're happy to see you here 💕</p>
+<a class="home-btn" href="/shop">Go to Shop 🛍️</a>
+{% endblock %}

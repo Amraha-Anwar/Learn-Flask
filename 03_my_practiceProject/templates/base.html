@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%}My Shop{% endblock %}</title>
+    <style>
+        h1 {color: black;}
+        header {background: rgb(239, 100, 123); color: black; padding: 10px; text-align: center; font-size: large; font-weight: 800;}
+        footer {margin-top: 30px; background: rgb(228, 67, 94); color: black; padding:20px;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>A<sub>A_.</sub>Cafe 🎀</h1>
+        <nav style="flex-direction: row; justify-content: space-between; text-decoration: none; color: black;">
+            <a href="/home">Home</a>
+            <a href="/shop">Shop</a>
+            <a href="/users">Users</a>
+        </nav>
+    </header>
+    {% block content%}
+    {% endblock %}
+
+    <footer>
+        <h1>We sell 🍵 🍰 💐</h1>
+        <h1>And offer 📚 to read and make you spend your best time here</h1>
+    </footer>
+</body>
+</html>
