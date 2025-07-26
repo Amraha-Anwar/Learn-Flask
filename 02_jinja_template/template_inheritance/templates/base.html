@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}My Website{% endblock %}</title>
+    <style>
+        body {font-family:monospace; padding: 20px;}
+        header {background: rgb(16, 16, 16); color: #ffffff; padding: 10px; text-align: center;}
+        footer {background: rgb(143, 11, 11); color: black; padding: 10px; margin-top: 30px; text-align: center;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Learn Template Inheritance</h1>
+        <nav>
+            <a href="/" style="text-decoration: none; color: #ffffff;">Home</a>
+            <a href="/about" style="text-decoration: none; color: #ffffff;"> About</a>
+        </nav>
+    </header>
+    {% block content %}
+    {% endblock %}
+    <footer>
+        <h3>I want to take a looooooong nap 😭</h3>
+    </footer>
+</body>
+</html>
