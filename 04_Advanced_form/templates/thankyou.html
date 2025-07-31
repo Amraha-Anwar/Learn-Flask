@@ -1,11 +1,10 @@
-{% extends "base.html %}
+{% extends "base.html" %}
 
 {% block title %} Thank You {% endblock %}
 
 {% block content %}
     <h1>Feedback Submitted✅</h1>
     <h2>Thank you {{ user }} for giving us your feedback 🎀</h2>
-    <br>
     <blockquote>{{ message }}</blockquote>
     <a href="/feedback">Feedback Form</a>
 {% endblock %}
